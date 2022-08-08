@@ -9,10 +9,13 @@ var resultAdd = number1 + number2;
 var resultSub = number1 - number2;
 var resultMul = number1 * number2;
 var resultPow = Math.pow(number1, number2)
+var expo=number1**number2;
 
 console.log("Sum of " + number1 + "  " + number2 + " is " + resultAdd);
 console.log("Subtract of " + number1 + "  " + number2 + " is " + resultSub);
 console.log("resultMul of " + number1 + "  " + number2 + " is " + resultMul);
 console.log("resultPow of " + number1 + "  " + number2 + " is " + resultPow);
+console.log("expo of " + number1 + "  " + number2 + " is " + expo);
+
 
 
