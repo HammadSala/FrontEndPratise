@@ -1,0 +1,111 @@
+body {
+    background-color: grey;
+}
+
+.main {
+    height: auto;
+    width: auto;
+}
+
+h2 {
+    position: relative;
+    top:100px;
+    left: 33%;  
+}
+h3 {
+    top: 120px;
+    left: 26%;
+    position: relative;
+}
+
+.form {
+    background-color: darkslategrey;
+    position: relative;
+    top: 150px;
+    left: 20%;
+    width: 50%;
+    border: 1px solid black;
+    text-align: left;
+    border-radius: 8px;
+    font-size: 20px;
+    vertical-align: middle;
+    padding: 25px;
+    color: gray;
+    box-shadow: 5px 10px #888888;
+    
+
+}
+
+label {
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    left: 10px;
+    display: block;
+    margin-left: 50px;
+}
+
+
+input {
+
+    margin-left:50px;
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#firstName {
+    display: inline-block;
+
+    margin-left:50px;
+    /* padding-left: 50px; */
+
+}
+
+#lastName {
+    display: inline-block;
+    margin-right: 90px;
+
+}
+
+#firstlabel {
+    display: inline-block;
+    padding-right: 90px;
+    margin-bottom: 10px;
+}
+
+#secondlabel {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+button {
+    position: relative;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+    left: 35%;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    
+
+}
+
+button:nth-last-child(1){
+    background-color: yellow;
+    color: black;
+ 
+}
+
+button:active{
+    box-shadow: 2px 4px lightgreen;
+
+}
+
+button:nth-last-child(1):active {
+    box-shadow: 2px 4px lightyellow;
+
+}
+

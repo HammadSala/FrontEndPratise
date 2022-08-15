@@ -1,0 +1,165 @@
+body {
+    height: 0%;
+    margin: 0%;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.headerright {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.headerright ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 5px;
+}
+
+
+
+.headerright ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.headerright ul li:hover{
+    color: white;
+    background-color: darkolivegreen;
+}
+
+.headerright ul li a:hover {
+    color: white;
+}
+
+nav {
+    background-color: grey;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+nav ul li, nav ul {
+    display: inline-block;
+    padding: 5px 10px 3px 10px;
+    color: white;
+}
+nav ul li:hover {
+    background-color: black;
+}
+
+#rightfloat {
+    position: absolute;
+    right: 3%;
+}
+
+.news > div{
+ margin: 1%;
+ display: block;
+ height: 200px;
+ border: 1px solid grey;
+}
+
+.news > div div {
+    display: inline-block;
+}
+
+.news > div div h6 {
+    margin-top: -75px;
+    margin-left: 30px;
+    color: white;
+    font-size: 15px;
+    font-style: bold;
+    opacity: 0;
+
+}
+
+.news > div div:hover .tdisplay  {
+    opacity: 1;
+}
+.news h3 {
+    margin-left: 10px;
+}
+
+.news > div img {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+#addvertisement {
+    background-color: none ;
+}
+#addvertisement h5 {
+    text-align: center;
+
+}
+
+section {
+    margin: 1%;
+    width: auto;
+    overflow: scroll;
+    word-wrap: none;
+}
+
+section div {
+    display: inline-block;
+}
+
+section div img {
+    display: inline;
+    overflow: auto;
+    height: 250px;
+    width: 250px;
+}
+
+
+.footer  {
+    background-color: grey;
+    color : honeydew;
+}
+
+.footer > div {
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.footerdiv1, .footerdiv2, .footerdiv3, .footerdiv1-1 {
+    color: white;
+    width: 25%;
+    
+}
+
+.footerdiv1 a, .footerdiv2 a, .footerdiv3 a {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+} 
+
+footer {
+    text-align: center;
+   
+}
+
+footer i {
+    color:white;
+}
+
+
+img:hover {
+    height: 400px;
+    width: 400px;
+}
+
+#footerdiv1-1 i {
+padding-right: 3px;
+}
