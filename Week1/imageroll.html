@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #slider {
+            height:  500px;
+            width: 500px;
+        }
+    </style>
     <script  type="text/javascript">
         var count = 1;
         var max = 5;
         setInterval(function(){
-            document.querySelector('slider').style.backgroundImage = "url('/ani'" + (count +1) + ".jpg')";
+            // C:\Users\Hammad-PC\Desktop\FRONTEND\JavaScript\Week1\ani1.jpg
+            document.getElementById('slider').style.backgroundImage = "url('ani" + (count +1) + ".jpg')";
+            // document.getElementById('slider').style.backgroundImage = "url('\Week1\ani1.jpg')";
             if ( count  +1 == max )
             {
                 count = 0;
@@ -17,14 +25,25 @@
             } else {
                 ++count;
             }
-        }, 2000);
+        }, 1000);
+
+        // var counter = 1; //instantiate a counter
+        // var maxImage = 5; //the total number of images that are available
+        // setInterval(function() {
+        //     document.getElementById('slider').style.backgroundImage = "url('images/" + (counter + 1) + ".jpg')";
+        //     if (counter + 1 == maxImage) {
+        //         counter = 0; //reset to start
+        //     } else {
+        //         ++counter; //iterate to next image	
+        //     }
+        // }, 10000);
+
     </script>
 </head>
 <body>
     <div  id="slider">
-        <a href="">
-            <img src="" alt="">
-        </a>
+        div here
+        <!-- <img src="ani1.jpg" alt=""> -->
     </div>
 </body>
 </html>
