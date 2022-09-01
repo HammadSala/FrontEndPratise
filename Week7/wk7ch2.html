@@ -1,0 +1,77 @@
+<!--Description
+Create a html page having some paragraph tag and some h2,h3 tags with some text inside them along with a div tag having id as ‘div’.
+All h2,h3 have same  value of  className attribute i.e, “header”
+All paragraphs tag have className attribute as “paragraph”.
+Now print the content of all paragraph tag in the browser console.
+And add a new h1 inside the div tag in html using js code.
+And also change the text of all header tags  to “HEADINGS” and paragraph tags to “PARAGRAPH”.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 class="header">header2</h2>
+    <h3 class="header">Header3</h3>
+    <p class="paragraph">111111Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet dolorum, illo asperiores voluptates ullam est
+        maxime laborum eum rerum necessitatibus sed soluta dicta labore. Laborum consectetur possimus amet itaque?</p>
+    <p class="paragraph">2222Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sint nihil dignissimos aut minus dolorem,
+        impedit laudantium placeat accusantium voluptate consequatur incidunt optio iusto repellat culpa itaque
+        reprehenderit quo consequuntur.</p>
+</body>
+
+<script>
+    var pcontent = document.getElementsByClassName('paragraph');
+    var pcontentArray = Array.from(pcontent);
+    // console.log(pcontent);
+    // console.log(pcontentArray);
+    // function myFunc(item){
+    //     console.log(item);
+    // }
+
+    // pcontentArray.forEach( function myFunc(item){
+    //     console.log(item);
+    // });
+    pcontentArray.forEach( Element =>
+    {
+        console.log(Element);
+    })
+   
+
+    document.body.innerHTML =  '<h1 class="header">header1</h1>' + document.body.innerHTML;
+    var headerElement = document.getElementsByClassName('header');
+    console.log(headerElement);
+    var headeArray =  Array.from(headerElement);
+    headeArray.forEach(  item => {
+        item.innerHTML = '<h1 class="header">Changed heading</h1>';
+    })
+
+    console.log("pcontenct", pcontentArray);
+
+    function pchange(item, index, arr) {
+        // arr[index].innerHTML ="Changedd";
+        console.log(arr[index].innerText);
+        arr[index].innerText=index;
+        console.log(arr[index].innerText);
+
+        document.getElementsByClassName('paragraph')[index].innerHTML = index;
+
+    }
+
+    pcontentArray.forEach( pchange);
+    // pcontentArray.forEach( item => {
+    //     console.log(item);
+    //     console.log(item.innerText);
+    //     console.log(item.tagName);
+    //     item.innerHTML = "<p>Changed paragraph</p>";
+    // })
+
+</script>
+</html>
