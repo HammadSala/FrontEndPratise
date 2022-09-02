@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia unde beatae corporis praesentium a totam eum commodi quaerat iure exercitationem officiis, perspiciatis maiores ipsam suscipit fugiat pariatur culpa error officia.</p>
+    <button class="btn">Clikc me!</button>
+
+    <script>
+        window.onload = function(){
+            alert("Pages is loaded and it has buttin")
+        }
+
+        function clickmefunction () {
+            alert("Button is clicked");
+        }
+
+        document.querySelector('.btn').onclick = clickmefunction;
+    </script>
+</body>
+</html>
