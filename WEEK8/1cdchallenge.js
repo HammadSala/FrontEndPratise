@@ -27,10 +27,12 @@ const person = {
     company: 'Cricketer'
 }
 
-function displayName( first, last) {
+function displayName( {first, last}) {
     // console.log(first + " --> " + last);
     console.log(`${first} --> ${last}`);
 }
 
 const { first, last } = person;
-displayName(first, last);
+// displayName(first, last);
+
+displayName(person);
